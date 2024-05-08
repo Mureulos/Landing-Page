@@ -1,0 +1,51 @@
+@import '../../../../$_color-variables.scss';
+@import '../../../../$_typography.scss';
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 16px 50px;
+    font-size: $Body-M;
+    font-family: 'Poppins SemiBold', sans-serif;
+    background-color: none;
+    transition: 0.25s all;
+
+    &.primary {
+        color: white;
+        background-color: $observatory;
+    }
+
+    &.primary-color {
+        color: $observatory;
+        background-color: white;
+    }
+
+    &.secondary {
+        border: 1px solid $observatory;
+        color: $observatory;
+        background-color: white;
+    }
+
+    &.secondary-color {
+        color: $observatory;
+        background-color: $aqua-squeeze;
+    }
+
+    &.tertiary {
+        color: $observatory;
+        background-color: transparent;
+    }
+}
+
+.btn:active {
+    transform: scale(0.9);
+
+}
+
+@media (max-width: 550px) {
+    .btn {
+        padding: 15px 40px;
+    }
+}

@@ -1,0 +1,29 @@
+<!-- src/app/pages/home/components/hero-section/hero-section.component.html -->
+<section class="hero-section container">
+  @if(!imgRight) {
+    <figure>
+      <img
+          [src]="'/assets/img/ilustrations/' + imgName + '.png'"
+          [alt]="imgAlt"
+      />
+    </figure>
+  }
+
+  <header>
+    <h1>{{ title }}</h1>
+    <p>{{ paragraph }}</p>
+    
+    <btn-principal 
+      [buttonProperties]="btns"
+    ></btn-principal>
+  </header>
+
+  @if(imgRight) {
+    <figure>
+      <img
+          [src]="'/assets/img/ilustrations/' + imgName + '.png'"
+          [alt]="imgAlt"
+      />
+    </figure>
+  }
+</section>

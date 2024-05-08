@@ -1,0 +1,18 @@
+<div class="card-pattern testimonal-info" *ngFor="let data of cardData">
+    <div class="client-info">
+        <figure>
+            <img
+            [src]="'/assets/img/perfilPicture/' + data.authPicture + '.png'"
+            alt="Client picture"
+            />
+        </figure>
+        <h2>{{ data.authName }}</h2>
+        <p>{{ data.authOffice }}</p>
+    </div>
+    
+    <div class="satisfaction">
+        <p class="text">{{ data.text }}</p>
+    </div>
+
+    <star-rating [rating]="data.stars"></star-rating>
+</div>

@@ -1,0 +1,85 @@
+@import '../../../../../$_color-variables.scss';
+@import '../../../../../$_typography.scss';
+
+.container {
+    flex-direction: row;
+    padding: 0;
+    background-color: $mandys-pink;
+    margin: 55px;
+    box-sizing: content-box;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        flex: 1;
+        padding: 55px;
+        text-align: left;
+    }
+
+    figure {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-family: 'Poppins Bold';
+        font-size: $Display-M;
+    }
+
+    p {
+        font-family: 'Mulish Regular';
+        font-size: $Body-L;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        margin: 30px 30px 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+
+        .text {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        h1 {
+            font-size: $Display-S;
+        }
+    
+        p {
+            font-size: $Body-M;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        h1 {
+            font-size: 25px;
+        }
+    
+        p {
+            font-size: $Body-S;
+        }
+    }
+}

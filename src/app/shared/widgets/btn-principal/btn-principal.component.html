@@ -1,0 +1,18 @@
+<!-- src/app/shared/widgets/btn-principal/btn-principal.component.html -->
+
+<button [class]="'btn ' + button.variant" *ngFor="let button of buttonProperties">
+    @if (button.icon) {
+      
+        @if(!button.iconRight) {
+            <!-- <svg-display [svgName]="button.icon"></svg-display> -->
+            <img [src]="'../../../../assets/svg/buttonIcons/' + button.icon + '.svg'" alt="Svg icon">
+            {{ button.btnText }}
+        } @else {
+            {{ button.btnText }}
+            <img [src]="'../../../../assets/svg/buttonIcons/' + button.icon + '.svg'" alt="Svg icon">
+        }
+
+    } @else {
+        {{ button.btnText }}
+      }
+</button>

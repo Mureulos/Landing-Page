@@ -1,0 +1,108 @@
+@import '../../../../$_typography.scss';
+@import '../../../../$_color-variables.scss';
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    text-align: left;
+    padding: 60px;
+    margin: 60px;
+    background-color: white;
+
+    * {
+        margin: 0;
+        line-height: normal;
+    }
+
+    h1 {
+        font-size: $Display-L;
+        text-transform: capitalize;
+    }
+
+    .text {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    .details {
+        grid-column: 1;
+        grid-row: 2;
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: $Body-M;
+
+                img {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .formCTA {
+        grid-column: 2;
+        grid-row: 2;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 950px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 40px;
+        margin: 30px 30px 60px;
+
+        h1 {
+            font-size: $Display-L;
+        }
+
+        p {
+            font-size: $Body-M;
+        }
+
+        .text {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .details {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        .formCTA {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-form {
+        text-align: center;
+        justify-items: center;
+
+        * {
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: $Display-S;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@import '../../../../$_typography.scss';
+
+.hero-section {
+    flex-direction: row;
+    gap: 55px;
+    text-align: left;
+
+    header {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+        * {
+            margin: 0;
+            line-height: normal;
+        }
+    
+        h1 {
+            font-size: $Display-XL;
+            text-transform: capitalize;
+        }
+    }
+        
+    figure {
+        flex: 1;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .hero-section {
+        header {
+            h1 {
+                font-size: $Display-L;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        
+        header {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-size: $Display-M;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-section {
+        header {
+            p {
+                font-size: $Body-M;
+            }
+        }
+
+        btn-principal {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-section {
+        header {
+            p {
+                font-size: $Body-M;
+            }
+        }
+
+        btn-principal {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-section {
+        header {
+            h1 {
+                font-size: $Display-S;
+            }
+
+            p {
+                font-size: $Body-M;
+            }
+        }
+
+        btn-principal {
+            flex-direction: column;
+        }
+    }
+}

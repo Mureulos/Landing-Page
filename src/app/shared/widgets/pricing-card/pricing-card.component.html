@@ -1,0 +1,48 @@
+<div 
+    class="card-pattern pricing-info" 
+    *ngFor="let data of cardData"
+    [ngClass]="{'highlighted': data.highlighted}"
+>
+    <div class="text">
+        <span>{{ data.plan }}</span>
+        <h2>${{ data.pricing }} <small>/ month</small></h2>
+        <p>{{ data.details }}</p>
+
+        <ul>
+            <li 
+                *ngFor="let feature of data.features" 
+                class="features"
+            >
+                @if(!data.highlighted) {
+                    <img src="/assets/svg/buttonIcons/Check-green.svg" alt="Check svg icon">
+                } @else {
+                    <img src="/assets/svg/buttonIcons/Check.svg" alt="Check svg icon">
+                }
+                {{ feature }}
+            </li>
+        </ul>
+    </div>
+    @if (!data.highlighted) {
+        <btn-principal
+            [buttonProperties]="[
+                {
+                    btnText: 'Get stated',
+                    variant: 'secondary-color',
+                    icon: '',
+                    iconRight: false,
+                },
+            ]"
+        ></btn-principal>
+    } @else {
+        <btn-principal
+            [buttonProperties]="[
+                {
+                    btnText: 'Get stated',
+                    variant: 'primary-color',
+                    icon: 'ArrowRight',
+                    iconRight: true,
+                },
+            ]"
+        ></btn-principal>
+    }
+</div>

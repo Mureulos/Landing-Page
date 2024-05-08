@@ -1,0 +1,56 @@
+@import '../../../../$_typography.scss';
+@import '../../../../$_color-variables.scss';
+
+.input-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: white;
+    border: 1px solid #D8D8D8;
+    border-radius: 20px;
+
+    .line {
+        background-color: #DBE3FF;
+        width: 1px;
+        height: 50px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 30px;
+        font-size: $Body-L;
+    }
+}
+
+.text-danger {
+    span {    
+        margin: 5px 0 0 10px;
+        font-size: 9px;
+        color: red;
+        font-size: $Body-M;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .input-content {
+        .line, img {
+            display: none;
+        }
+
+        input {
+            height: 50px;
+        }
+    }
+
+    .text-danger {
+        span {
+            text-align: left;
+        }
+    }
+}

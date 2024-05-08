@@ -1,0 +1,18 @@
+@import '../../../../$_color-variables.scss';
+@import '../../../../$_typography.scss';
+
+.testimonal-info {
+    .client-info {
+        display: grid;
+        gap: 8px;
+
+        figure {
+            img {
+                object-fit: cover;
+                border-radius: 1000px;
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+}

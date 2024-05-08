@@ -1,0 +1,23 @@
+<div 
+  class="card-pattern info-card" 
+  *ngFor="let data of cardData"
+  [ngClass]="{'botton-line': !data.button}"
+>
+    @if(data.iconSrc) {
+      <figure style="background-color: {{ data.iconBgColor }}">
+        <img 
+          [src]="'/assets/svg/cardIcons/' + data.iconSrc + '.svg'" 
+          [alt]="data.iconSrc + ' icon '"
+        >
+      </figure>
+    }
+    
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.paragraph }}</p>
+  
+    @if(data.button) {
+      <btn-principal
+        [buttonProperties]="btnData"
+      ></btn-principal>
+    }
+</div>

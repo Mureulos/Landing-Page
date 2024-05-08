@@ -1,0 +1,24 @@
+.enterprises {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 60px;
+    
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-radius: 0;
+    
+    img {
+        flex: 1;
+        max-width: 90px;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+}
+
+.container {
+    padding: 60px 55px;
+}

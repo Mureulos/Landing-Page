@@ -1,0 +1,34 @@
+<!-- src/app/shared/components/navbar/navbar.component.html -->
+<nav>
+  <span class="logomark">
+    <img src="/assets/img/logo/logo.svg" alt="Tv Icon" />
+    <p><b>Landing</b>Page</p>
+  </span>
+
+  <div class="loose-btns">
+    <btn-principal
+      [buttonProperties]="[
+            {
+              btnText: 'Contact',
+              variant: 'tertiary',
+              icon: '',
+              iconRight: false,
+            },
+            {
+              btnText: 'How it works',
+              variant: 'secondary-color',
+              icon: '',
+              iconRight: false,
+            },
+            {
+              btnText: 'Get started',
+              variant: 'primary',
+              icon: 'RocketLaunch',
+              iconRight: false,
+            },
+        ]
+      "
+    ></btn-principal>
+  </div>
+    
+</nav>

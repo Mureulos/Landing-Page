@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('/assets/font/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('/assets/font/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('/assets/font/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mulish Regular';
+    src: url('/assets/font/Mulish-Light.ttf') format('truetype');
+}
+
+// Headings
+$Display-2XL: 90px;
+$Display-XL: 67px;
+$Display-L: 50px;
+$Display-M: 38px;
+$Display-S: 28px;
+
+// Body
+$Body-XL: 28px;
+$Body-L: 21px;
+$Body-M: 16px;
+$Body-S: 14px;

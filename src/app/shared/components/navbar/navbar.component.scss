@@ -1,0 +1,44 @@
+@import '../../../../$_typography.scss';
+@import '../../../../$_color-variables.scss';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: $zircon;
+
+    .logomark {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: $Body-L;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        p {
+            margin: 0;
+            font-family: 'Poppins Regular';
+            
+            b {font-family: 'Poppins Bold';}
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        gap: 25px;
+
+        .logomark {
+            p {
+                display: none;
+            }
+        }
+
+        .loose-btns {
+            display: none;
+        }
+    }
+}

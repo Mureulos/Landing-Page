@@ -1,0 +1,257 @@
+<app-navbar></app-navbar>
+
+<main>
+  <app-hero-section
+    title="create engaging landing pages"
+    paragraph="Build beautiful landing pages in record time with Anima’s Landing Page UI kit for Figma. No code required!"
+    imgName="visuals"
+    imgAlt="Mobile Cellphone"
+    [imgRight]="true"
+    [btns]="[
+        {
+            btnText: 'Get started',
+            variant: 'primary',
+            icon: 'RocketLaunch',
+            iconRight: false,
+        },
+        {
+            btnText: 'How it works',
+            variant: 'secondary',
+            icon: '',
+            iconRight: false,
+        },
+    ]"
+  ></app-hero-section>
+
+  <logobar
+    [logos]="[
+      { src: 'airbnb' },
+      { src: 'google' },
+      { src: 'amazon' },
+      { src: 'microsoft' },
+      { src: 'fedex' },
+      { src: 'hubspot' }
+    ]"
+  ></logobar>
+
+  <section class="container">
+    <h1 class="headline">Features</h1>
+
+    <p class="subhead">
+      These are just a few features you’ll get using Anima Landing Page UiKit.
+    </p>
+
+    <info-cards
+      class="cards"
+      [cardData]="[
+          {
+            iconSrc: 'MagicWand',
+            iconBgColor: '#FFE0DC',
+            title: 'Fast building',
+            paragraph: 'Tailor Anima s Landing Page UI Kit to your unique style and brand with customisable components, in no time!',
+            button: true,
+          },
+          {
+            iconSrc: 'BoundingBox',
+            iconBgColor: '#CCE9E4',
+            title: 'Responsive Desing',
+            paragraph: 'No need to worry about screen size. Anima s Landing Page UI Kit adapts to any screen size, from desktop to mobile.',
+            button: true,
+          },
+          {
+            iconSrc: 'Confetti',
+            iconBgColor: '#FEF7E5',
+            title: 'No Code Needed',
+            paragraph: 'Zero coding skills required, Anima s Landing Page UI Kit empowers you to create stunning landing pages with ease.',
+            button: true,
+          }
+        ]"
+      [btnData]="[
+          {
+            btnText: 'Learn More',
+            variant: 'tertiary',
+            icon: 'ArrowRight-green',
+            iconRight: true,
+          },
+        ]"
+    ></info-cards>
+  </section>
+
+  <app-hero-section
+    title="Get landing page ui kit today!"
+    paragraph="Build beautiful landing pages in record time with Anima’s Landing Page UI kit for Figma. No code required!"
+    imgName="visuals2"
+    imgAlt="Mobile Cellphone"
+    [imgRight]="false"
+    [btns]="[
+      {
+          btnText: 'Get started',
+          variant: 'primary',
+          icon: 'ArrowLeft',
+          iconRight: true,
+      },
+  ]"
+  ></app-hero-section>
+
+  <section class="container">
+    <h1 class="headline">Our Metrics Tell the Story</h1>
+
+    <p class="subhead">
+      Our metrics component gives you the inside scoop on your success and helps
+      you stay on top of your game in style.
+    </p>
+
+    <info-cards
+      class="cards"
+      [cardData]="[
+          {
+            iconSrc: '',
+            title: '10k+',
+            paragraph: 'Website launched',
+            button: false,
+          },
+          {
+            iconSrc: '',
+            title: '931k+',
+            paragraph: 'Projects created with Anima',
+            button: false,
+          },
+          {
+            iconSrc: '',
+            title: '240k+',
+            paragraph: 'New users joined Anima',
+            button: false,
+          },
+          {
+            iconSrc: '',
+            title: '12+',
+            paragraph: 'Teams used Anima',
+            button: false,
+          }
+        ]"
+    ></info-cards>
+  </section>
+
+  <section class="container">
+    <h1 class="headline">Real Stories from Satisfied Customers</h1>
+
+    <p class="subhead">See how our landing page ui kit is making an impact.</p>
+
+    <testimonal-card
+      class="cards"
+      [cardData]="[
+        {
+          authPicture: 'photo1',
+          authName: 'Sarah K.',
+          authOffice: 'UX Designer @Brello',
+          text: 'I was looking for a way to streamline my design process and the Anima s Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!',
+          stars: 5,
+        },
+        {
+          authPicture: 'photo2',
+          authName: 'Michael L.',
+          authOffice: 'Creative Director @Yo',
+          text: 'The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped us deliver projects faster and with more consistency. Great job!',
+          stars: 4,
+        },
+        {
+          authPicture: 'photo3',
+          authName: 'Lauren M.',
+          authOffice: 'UI Designer @Boo',
+          text: 'Anima s Landing Page UI Kit has become a staple in my design toolkit. Whether I m working on a new project or need to make updates to an existing one, this kit has everything I need to get the job done quickly and efficiently.',
+          stars: 5,
+        },
+      ]"
+    ></testimonal-card>
+  </section>
+
+  <section class="container">
+    <h1 class="headline">Pick Your Perfect Plan</h1>
+
+    <p class="subhead">
+      Find the perfect paln for your business with our flexible pricing options
+    </p>
+
+    <pricing-card
+      class="cards"
+      [cardData]="[
+        {
+          plan: 'free',
+          pricing: '0',
+          details: 'Best for Small Teams or Individuals.',
+          highlighted: false,
+          features: [
+            'Write feature details here',
+            'Write feature details here',
+            'Write feature details here'
+          ]
+        },
+        {
+          plan: 'Professional',
+          pricing: '19',
+          details: 'Ideal for Growing Companies.',
+          highlighted: false,
+          features: [
+            'Write feature details here',
+            'Write feature details here',
+            'Write feature details here'
+          ]
+        },
+        {
+          plan: 'Enterprise',
+          pricing: '49',
+          details: 'Ultimate for Enterprise Solutions.',
+          highlighted: true,
+          features: [
+            'Write feature details here',
+            'Write feature details here',
+            'Write feature details here'
+          ]
+        }
+      ]"
+    ></pricing-card>
+  </section>
+
+  <section class="container">
+    <h1 class="headline">Meet our team</h1>
+
+    <p class="subhead">
+      Get to know the faces behind the scenes and learn about the values that
+      drive us.
+    </p>
+
+    <member-card
+      class="cards"
+      style="justify-content: center"
+      [cardData]="[
+        {
+          memberPicture: 'photo1',
+          memberName: 'Sarah K.',
+          memberOcupation: 'UX Designer',
+          socialLinks: ['', '', ''],
+        },
+        {
+          memberPicture: 'photo2',
+          memberName: 'Michael L.',
+          memberOcupation: 'Lead Designer',
+          socialLinks: ['', '', ''],
+        },
+        {
+          memberPicture: 'photo3',
+          memberName: 'Lauren M.',
+          memberOcupation: 'Product Designer',
+          socialLinks: ['', '', ''],
+        },
+      ]"
+    ></member-card>
+  </section>
+
+  <highlighted-cta/>
+
+  <contact-form
+    headline="Let’s get in touch!"
+    subhead="Got questions about the Landing Page UI Kit? Our team is here to help. Contact us for quick and friendly support."
+  ></contact-form>
+</main>
+
+<app-footer></app-footer>

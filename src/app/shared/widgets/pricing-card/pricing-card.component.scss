@@ -1,0 +1,46 @@
+@import '../../../../$_color-variables.scss';
+@import '../../../../$_typography.scss';
+
+.pricing-info {
+    min-width: 330px;
+    gap: 40px;
+ 
+    .text {
+        display: grid;
+        text-align: left;
+        gap: 15px;
+        width: 100%;
+    
+        h2 {
+            font-family: 'Poppins Bold';
+            font-size: $Display-L;
+        }
+
+        small, span, .features {
+            font-size: $Body-S;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .features {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+.highlighted {
+    background-color: $observatory;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .pricing-info {
+        min-width: auto;
+    }
+}

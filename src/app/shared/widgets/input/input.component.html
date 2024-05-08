@@ -1,0 +1,24 @@
+<div class="input-content" [formGroup]="form">
+    <img 
+        [src]="'assets/svg/inputIcons/' + icon + '.svg'" 
+        alt="Input icon" 
+    />
+
+    <div class="line"></div>
+
+    <input
+        [type]="type"
+        [id]="idInput"
+        formControlName="{{controlName}}"
+        [placeholder]="placeholder"
+    />
+</div>
+<div 
+    class="text-danger" 
+    *ngIf="(form.controls[controlName].invalid) && 
+    (form.controls[controlName].touched || form.controls[controlName].dirty)"
+>
+    <span *ngIf="form.controls[controlName].errors?.['required']">
+        This is required
+    </span>
+</div>

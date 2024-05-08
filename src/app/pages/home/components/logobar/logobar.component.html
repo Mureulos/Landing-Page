@@ -1,0 +1,7 @@
+<aside class="enterprises container">
+  <img
+    *ngFor="let logo of logos"
+    [src]="'/assets/img/logo/' + logo.src + '.png'"
+    [alt]="logo.src + ' logo'"
+  />
+</aside>

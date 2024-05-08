@@ -1,0 +1,26 @@
+<div 
+    class="card-pattern team-info"
+    *ngFor="let data of cardData"
+>
+    <figure>
+        <img [src]="'/assets/img/perfilPicture/' + data.memberPicture + '.png'" 
+        alt="Team member Picture">
+    </figure>
+
+    <div class="text">
+        <h2>{{ data.memberName }}</h2>
+        <span>{{ data.memberOcupation }}</span>
+    </div>
+    
+    <div class="social-links">
+        <a [href]="data.socialLinks[0]">
+            <img src="/assets/svg/socialIcons/twitter.svg" alt="twitter svg icon">
+        </a>
+        <a [href]="data.socialLinks[1]">
+            <img src="/assets/svg/socialIcons/dribble.svg" alt="dribble svg icon">
+        </a>
+        <a [href]="data.socialLinks[2]">
+            <img src="/assets/svg/socialIcons/instagram2.svg" alt="instagram svg icon">
+        </a>
+    </div>
+</div>

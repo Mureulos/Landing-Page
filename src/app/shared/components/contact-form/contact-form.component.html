@@ -1,0 +1,62 @@
+<section class="contact-form container">
+  <div class="text">
+    <h1 class="headline">{{ headline }}</h1>
+    <p class="subhead">{{ subhead }}</p>
+  </div>
+
+  <aside class="details">
+    <div class="contact">
+      <span>
+        <img src="assets/svg/telephone.svg" alt="" />
+        +012 345 6789
+      </span>
+      <span>
+        <img src="assets/svg/email.svg" alt="" />
+        {{ "Hello@animapp.com" }}
+      </span>
+    </div>
+
+    <div class="social-links">
+      <a href="">
+        <img src="/assets/svg/socialIcons/twitter.svg" alt="twitter svg icon" />
+      </a>
+      <a href="">
+        <img src="/assets/svg/socialIcons/dribble.svg" alt="dribble svg icon" />
+      </a>
+      <a href="">
+        <img src="/assets/svg/socialIcons/instagram2.svg" alt="instagram svg icon"/>
+      </a>
+    </div>
+  </aside>
+
+  <form action="" class="formCTA" [formGroup]="userForm">
+    <app-input
+      type="text"
+      id="fullName"
+      icon="fullName"
+      placeholder="Full Name"
+      controlName="fullName"
+      [form]="userForm"
+    ></app-input>
+
+    <app-input
+      type="email"
+      id="email"
+      icon="email"
+      placeholder="E-mail"
+      controlName="email"
+      [form]="userForm"
+    ></app-input>
+
+    <btn-principal
+      [buttonProperties]="[
+        {
+          btnText: 'Submit',
+          variant: 'primary',
+          icon: '',
+          iconRight: false,
+        },
+      ]"
+    ></btn-principal>
+  </form>
+</section>
