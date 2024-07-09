@@ -1,4 +1,4 @@
-# Animate landing page:
+# Anima landing page:
 Responsive landing page using the anima figma template. Made with the aim of learning and putting Angular knowledge into practice in creating responsive web applications, reusing components, file structure and Scss
 
 ## Screenshot:
